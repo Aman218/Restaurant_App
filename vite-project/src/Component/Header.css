@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.container{
+  min-width: 100%;
+  /* background-color: rgb(123, 36, 36); */
+ 
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 1rem 0.3rem;
+  max-height: 6rem;
+}
+.imgcontainer{
+  display: flex;
+ flex: 1;
+ justify-content:flex-start;
+ padding-left: 5rem;
+ /* background-color: red; */
+ 
+}
+.imgcontainer img{
+ max-width: 100%;
+ height: auto;
+ max-height: 80px;
+ /* background-color: rebeccapurple; */
+ cursor: pointer;
+}
+
+.nav-section{
+  display: flex;
+  width: 46%;
+  justify-content: space-evenly;
+  /* background-color: yellow; */
+  font-size: 0.95rem;
+  /* margin-top: 0rem; */
+}
+a{
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+
+.nav-section a:hover{
+  /* border-bottom: 1px solid #FF5200; */
+  transform: scale(1);
+  color: #FF5200;
+}
+.nav-section a {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  max-height: 2.8rem;
+  margin-top: 0.4rem;
+  padding: 0.6rem; /* Padding for better clickable area */
+  transition: all 0.2s linear; /* Combined properties */
+  color: black;
+}
+
+.nav-section a span {
+  margin-right: 0.5rem; /* Add space between icon and text */
+}
+@media (max-width:1150px) {
+  .nav-section{
+    width: 56%;
+  }
+}
+@media (max-width:960px) {
+  .nav-section{
+    width: 65%;
+  }
+  .nav-section a{
+    padding: 0.1rem;
+  }
+}
+#hidden{
+  display: none;
+}
+@media (max-width:900px) {
+ #hidden{
+  display: block;
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+ }
+ #icon-ham{
+  width: 100%;
+  height: 100%;
+
+ }
+ #nav-links1,#nav-links2,#nav-links3,#nav-links4,#nav-links5{
+  display:none;
+ }
+.nav-section{
+  justify-content:end;
+  padding-right: 0.4rem;
+  
+}
+.imgcontainer{
+  padding-left: 0.3rem;
+}
+}

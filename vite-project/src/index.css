@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 2rem; */
+  }
+  .scroll-bar::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    
+  }
+  
+  .scroll-bar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+  }
+  
+  .scroll-bar::-webkit-scrollbar-thumb {
+    background: #FF8200; /* Color of the scrollbar thumb */
+    border-radius: 3px; /* Rounded corners for the scrollbar thumb */
+    padding: 1rem;
+  }
+  
+  .scroll-bar::-webkit-scrollbar-thumb:hover {
+    background: #c33d10; /* Color of the scrollbar thumb on hover */
+  }
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
